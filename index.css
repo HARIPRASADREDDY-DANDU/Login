@@ -1,0 +1,123 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+.image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    margin-right: 20px;
+}
+.main{
+    margin-top: 40px;
+    display: flex;
+}
+.head{
+    font-size: 12px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.model{
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+.txt{
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+.color{
+    font-size: 14px;
+    font-weight: 400;
+    color: #86939E;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.selection{
+    text-align: center;
+    width: 150px;
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+.price{
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+.add{
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+    border-style: none;
+    /* height: 10px; */
+}
+.rsel{
+    background-color: #c91524;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50%;
+}
+.bsel{
+    background-color: #314780;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50%;
+}
+.blsel{
+    background-color: #323232;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 50%;
+}
+.sl{
+    display: flex;
+    column-gap: 15px;
+}
+
+
+/* nav */
+nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.logo{
+    margin-left: 20px;
+}
+.items{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
+    column-gap: 40px;
+}
+.item{
+    text-decoration: none;
+    color: black;
+}
