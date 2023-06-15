@@ -13,7 +13,7 @@
         </section>
         <section class="items">
             <a href="home.html" class="item">Home</a>
-            <a href="cart.html" class="item">Cart <span class="count">(1)</span>
+            <a href="cart.html" class="item">Cart <span class="count"></span>
             </a>
             <a href="help.html" class="item">Help</a>
             <a href="index.html" class="item">Logout</a>
@@ -103,7 +103,7 @@
                               document.getElementById("pimage").src = "cream.png";
                             }
                         </script>
-                        <a href="product.html" class="plus">Buy</a>
+                        <button class="plus" onclick="beats(1)" id="beats1">Buy</button>
                     </section>
                 </section>
             </secton>
@@ -168,7 +168,7 @@
                               document.getElementById("pimage2").src = "cream.png";
                             }
                         </script>
-                        <a href="product.html" class="plus">Buy</a>
+                        <button class="plus" onclick="beats(2)" id="beats2">Buy</button>
                     </section>
                 </section>
             </secton>
@@ -234,7 +234,7 @@
                                 document.getElementById("pimage3").src = "cream.png";
                             }
                         </script>
-                        <a href="product.html" class="plus">Buy</a>
+                        <button class="plus" onclick="beats(3)" id="beats3">Buy</button>
                     </section>
                 </section>
             </secton>
@@ -284,5 +284,26 @@
     <!-- <section class="reviews">
         section,
     </section> -->
+
+    <script>
+        function beats(index){
+            var cont = document.getElementById("beats"+index);
+            if(cont===beats1){
+                console.log("1");
+                localStorage.setItem("value","beats1");
+                localStorage.setItem("key","a");
+            }
+            // else if(cont===beats2){
+            //     console.log("2")
+            //     localStorage.setItem("value","beats2");
+            //     localStorage.setItem("key","b");
+            // }
+            // else if(cont===beats3){
+            //     console.log("3");
+            //     localStorage.setItem("value","beats3");
+            //     localStorage.setItem("key","c");
+            // }
+        }
+    </script>
 </body>
 </html>

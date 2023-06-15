@@ -121,3 +121,9 @@ nav{
     text-decoration: none;
     color: black;
 }
+.count{
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #d01632;
+}

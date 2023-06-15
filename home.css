@@ -299,6 +299,8 @@ nav{
     color: bisque;
 }
 .count{
-    
-    color:#d01632;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #d01632;
 }

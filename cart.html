@@ -14,42 +14,74 @@
         </section>
         <section class="items">
             <a href="home.html" class="item">Home</a>
-            <a href="cart.html" class="item">Cart</a>
+            <a href="cart.html" class="item">Cart <span class="count"></span></a>
             <a href="help.html" class="item">Help</a>
             <a href="index.html" class="item">Logout</a>
         </section>
     </nav>
     <hr>
-    <section class="main">
+    <section class="main" id="beats1" style="display: none;">
         <section class="image">
-            <img src="red.png" alt="" srcset="" width="500px" height="500px">
+            <img src="p2.png" alt="" srcset="" width="500px" height="500px"  id="pimage">
         </section>
-        <section class="content">
+        <section class="content" >
             <p class="head">HEADPHONES</p>
-            <h1 class="model">Beats EP</h1>
+            <h1 class="model">Beats Fit Pro+</h1>
             <p class="txt">The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
             <hr>
             <p class="availablecolors">
                 <p class="color">Color</p><br>
-                <section class="sl">
-                    <input type="radio" name="red" id="red" class="red ck" hidden>
-                    <label for="red">
-                        <section class="rsel">
-
-                        </section>
+                <section class="pcon">
+                    <label for="ch1">
+                        <section class="clrs" onclick="fun()"></section>
                     </label>
-                    <input type="radio" name="red" id="blue" class="blue ck" hidden>
-                    <label for="blue">
-                        <section class="bsel">
-
-                        </section>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun() {
+                          document.getElementById("pimage").src = "red.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs1" onclick="fun1()"></section>
                     </label>
-                    <input type="radio" name="red" id="black" class="black ck" hidden>
-                    <label for="black">
-                        <section class="blsel">
-
-                        </section>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun1() {
+                          document.getElementById("pimage").src = "blue.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs2" onclick="fun2()"></section>
                     </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun2() {
+                          document.getElementById("pimage").src = "black1.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs3" onclick="fun3()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun3() {
+                          document.getElementById("pimage").src = "bt2.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs4" onclick="fun4()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun4() {
+                          document.getElementById("pimage").src = "cream.png";
+                        }
+                    </script>
+                    <!-- <a href="product.html" class="plus">Buy</a> -->
                 </section>
             </p>
             <p class="color">Cable configuration</p><br>
@@ -57,9 +89,261 @@
             <button class="selection">Coiled</button>
             <button class="selection">Long - Coiled</button>
             <hr>
-            <p class="price">148$</p>
+            <p class="price">199.99$</p>
+            <button type="button" class="add">Buy-Now</button>
+            <button type="button" class="remove" id="remove" onclick="remove()">REMOVE</button>
+        </section>
+    </section>
+    <!-- -->
+    <section class="main" id="beats2" style="display: none;">
+        <section class="image">
+            <img src="p2.png" alt="" srcset="" width="500px" height="500px"  id="pimage">
+        </section>
+        <section class="content" >
+            <p class="head">HEADPHONES</p>
+            <h1 class="model">Beats Fit Pro+</h1>
+            <p class="txt">The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+            <hr>
+            <p class="availablecolors">
+                <p class="color">Color</p><br>
+                <section class="pcon">
+                    <label for="ch1">
+                        <section class="clrs" onclick="fun()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun() {
+                          document.getElementById("pimage").src = "red.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs1" onclick="fun1()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun1() {
+                          document.getElementById("pimage").src = "blue.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs2" onclick="fun2()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun2() {
+                          document.getElementById("pimage").src = "black1.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs3" onclick="fun3()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun3() {
+                          document.getElementById("pimage").src = "bt2.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs4" onclick="fun4()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun4() {
+                          document.getElementById("pimage").src = "cream.png";
+                        }
+                    </script>
+                    <!-- <a href="product.html" class="plus">Buy</a> -->
+                </section>
+            </p>
+            <p class="color">Cable configuration</p><br>
+            <button class="selection" aria-selected="true">Straight</button>
+            <button class="selection">Coiled</button>
+            <button class="selection">Long - Coiled</button>
+            <hr>
+            <p class="price">199.99$</p>
             <button type="button" class="add">Buy-Now</button>
         </section>
     </section>
+    <!--  -->
+    <section class="main" id="beats3" style="display: none;">
+        <section class="image">
+            <img src="p2.png" alt="" srcset="" width="500px" height="500px"  id="pimage">
+        </section>
+        <section class="content" >
+            <p class="head">HEADPHONES</p>
+            <h1 class="model">Beats Fit Pro+</h1>
+            <p class="txt">The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+            <hr>
+            <p class="availablecolors">
+                <p class="color">Color</p><br>
+                <section class="pcon">
+                    <label for="ch1">
+                        <section class="clrs" onclick="fun()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun() {
+                          document.getElementById("pimage").src = "red.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs1" onclick="fun1()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun1() {
+                          document.getElementById("pimage").src = "blue.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs2" onclick="fun2()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun2() {
+                          document.getElementById("pimage").src = "black1.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs3" onclick="fun3()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun3() {
+                          document.getElementById("pimage").src = "bt2.png";
+                        }
+                    </script>
+                    <!--  -->
+                    <label for="ch1">
+                        <section class="clrs4" onclick="fun4()"></section>
+                    </label>
+                    <input type="radio" name="ch1" id="ch1" hidden>
+                    <script>
+                        function fun4() {
+                          document.getElementById("pimage").src = "cream.png";
+                        }
+                    </script>
+                    <!-- <a href="product.html" class="plus">Buy</a> -->
+                </section>
+            </p>
+            <p class="color">Cable configuration</p><br>
+            <button class="selection" aria-selected="true">Straight</button>
+            <button class="selection">Coiled</button>
+            <button class="selection">Long - Coiled</button>
+            <hr>
+            <p class="price">199.99$</p>
+            <button type="button" class="add">Buy-Now</button>
+        </section>
+    </section>
+
+    <style>
+        .pcon{
+            display: flex;
+            column-gap: 10px;
+        }
+        .clrs{
+            width: 20px;
+            height: 20px;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #d01632;
+        }
+        .clrs1{
+            width: 20px;
+            height: 20px;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #37caf3;
+        }
+        .clrs2{
+            width: 20px;
+            height: 20px;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #0a0a0a;
+        }
+        .clrs3{
+            width: 20px;
+            height: 20px;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #f93cc7;
+        }
+        .clrs4{
+            width: 20px;
+            height: 20px;
+            border-style: none;
+            border-radius: 50%;
+            background-color: #eccec9;
+        }
+        #beats1{
+            display: none;
+        }
+        #beats2{
+            display: none;
+        }
+        #beats2{
+            display: none;
+        }
+        .remove{
+            padding: 14px;
+            border-radius: 5px;
+            background-color: #d01632;
+            color: #eccec9;
+            border-style: none;
+        }
+    </style>
+
+    <script>
+
+        var key1 = localStorage.getItem("key");
+        console.log(key1);
+        if(key1==="a"){
+            retrieve1();
+        }
+        // if(key2==="b"){
+        //     retrieve2();
+        // }
+        // if(key1==="c"){
+        //     retrieve3();
+        // }
+        var item1;
+        function retrieve1(){
+            console.log("retreved")
+            item1 = localStorage.getItem("value");
+            var di1 = document.getElementById("beats1");
+            var di2 = document.getElementById("beats2");
+            var di3 = document.getElementById("beats3")
+            
+            var val1 = di1.style.display;
+            var val2 = di2.style.display;
+            var val3 = di3.style.display;
+            if(item1==="beats1"){
+                // console.log(val1);
+
+                if(val1 === "flex"){
+                    console.log(val1);
+                    di1.style.display = "none";
+                }
+                else{
+                    console.log("none")
+                    di1.style.display = "flex";
+                }
+            }
+        }
+        function remove(){
+            var di1 = document.getElementById("beats1");
+            di1.style.display = "none";
+            localStorage.setItem("item1","none")
+            console.log(item1);
+        }
+    </script>
 </body>
 </html>

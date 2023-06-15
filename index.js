@@ -2,49 +2,50 @@ var checkbox = document.querySelector('.checkbox');
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
-    document.getElementById('password').type = "text";
+    document.getElementById('password2').type = "text";
   } else {
-    document.getElementById('password').type = "password";
+    document.getElementById('password2').type = "password";
   }
 });
 
-var username = ['prasadreddyhari2@gmail.com'];
+var user = ['prasadreddyhari2@gmail.com'];
 var pass = ['Hari'];
+function retrieveCredentials() {
+  var username = localStorage.getItem("username");
+  var password = localStorage.getItem("password");
+
+  if (username && password) {
+      user.push(username);
+      pass.push(password);
+    }
+    sub();
+  }
+
+  // window.onload = retrieveCredentials;
+
+
 var submit = document.querySelector('.btn');
 
-let userip;
-let userpass;
-
+var userip;
+var userpass;
+var item = false;
 function sub(){
-  userip = document.getElementById("email").value;
-  userpass = document.getElementById("password").value;
-  // console.log(userip);
-  // console.log(userpass);
-  for(let i=0;i<username.length;i++){
+  userip = document.getElementById("username1").value;
+  userpass = document.getElementById("password2").value;
+  for(let i=0;i<user.length;i++){
       for(let j=0;j<pass.length;j++){
-        if(userip==='' && userpass===''){
-          alert("Both input fields are empty");
-        }
-        else if(userip===''){
-          alert("Username field is empty");
-        }
-        else if(userpass===''){
-          alert("Password field is empty");
-        }
-        else if(username[i]==userip && pass[j]===userpass){
-            console.log("You logged In");
-            
-            location.href = "home.html";
-        }
-        else{
-            alert("Incorrect username or Password\nUsername: prasadreddyhari2@gmail.com\nPassword: Hari");
+        if(user[i]==userip && pass[j]===userpass){
+            item = true;
+            break;
         }
       }
   }
+  if(item){
+    location.href = "home.html";
+  }
+  else{
+    alert("Incorrect username or Password");
+  }
 }
 
-// let useripsignup;
-// let userpasssignup;
-// function subsig(){
-//     useripsignup = document.get
-// }
+  

@@ -30,12 +30,13 @@
                 <label for="date">Date Of Birth</label>
                 <input type="date" name="date" id="date" class="ipsig" required>
                 <label for="emailsi">Email</label>
-                <input type="email" name="emailsi" id="emailsi" placeholder="Enter your email" class="ipsig" required>
+                <input type="email" name="emailsi" id="username" placeholder="Enter your email" class="ipsig" required>
                 <label for="passsi1">Password</label>
-                <input type="password" name="passsi1" id="passsi1" placeholder="Enter your password" class="ipsig" required>
+                <input type="password" name="passsi1" id="password" placeholder="Enter your password" class="ipsig" required>
                 <label for="passsi2">Re-Enter Password</label>
                 <input type="password" name="passsi2" id="passsi2" placeholder="Re-Enter your Password" class="ipsig" required>
-                <button type="submit" onclick="subsig()" class="sgbtn">Submit</button>
+                <button type="submit" onclick="storeCredentials()" class="sgbtn">Submit</button>
+                <!-- <a href="index.html">Login</a> -->
             </section>
         </form>
         <section class="im">
@@ -45,6 +46,25 @@
         </section>
     </section>
     
-    <script src="index.js"></script>
+    <script>
+        function storeCredentials() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+    
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
+          if(username!=='' && password!==''){
+            console.log('hi');
+            location.href = "index.html";
+          }
+          else{
+            console.log('sucess');
+          }
+        }
+      </script>
+
+      <!-- Second HTML page -->
+    
+
 </body>
 </html>
