@@ -47,20 +47,50 @@
     </section>
     
     <script>
+        var ousername = "";
+        var opassword = "";
+        var ntru = false;
+        var utru = false;
+        var vtru = true;
         function storeCredentials() {
-          var username = document.getElementById("username").value;
-          var password = document.getElementById("password").value;
-    
-          localStorage.setItem("username", username);
-          localStorage.setItem("password", password);
-          if(username!=='' && password!==''){
-            console.log('hi');
-            location.href = "index.html";
-          }
-          else{
-            console.log('sucess');
-          }
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            ousername = username;
+            opassword = password;
+            var pass = password.split("");
+            console.log(pass);
+            var count = pass.length;
+            console.log(count);
+            for(let i=0;i<count;i++){
+                if(pass[i].match(/\d+/g)){
+                    console.log(' number found');
+                    ntru = true;
+                }
+                else if(pass[i].toUpperCase() === pass[i] ){
+                    console.log('✅ letter is uppercase');
+                    utru = true;
+                }
+                else if(pass[i].toLowerCase() === pass[i]){
+                    vtru = true;
+                    console.log('✅ letter is Lowercase');
+                }
+            }
+            if(ousername!=='' && opassword.length>=8){
+                if(ntru && utru && vtru){
+                    console.log("Requirements meat");
+                    localStorage.setItem("username", ousername);
+                    localStorage.setItem("password", opassword);
+                    location.href = "index.html";
+                }
+                else{
+                    console.log("Requirements not meatin password");
+                }
+            }
+            else{
+                console.log("Requirements not meat");
+            }
         }
+        
       </script>
 
       <!-- Second HTML page -->
