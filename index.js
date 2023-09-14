@@ -8,7 +8,7 @@ checkbox.addEventListener('change', function() {
   }
 });
 
-var user = ['prasadreddyhari2@gmail.com'];
+var user = ['Hariprasad'];
 var pass = ['Hari'];
 function retrieveCredentials() {
   var username = localStorage.getItem("username");
@@ -44,7 +44,8 @@ function sub(){
     location.href = "home.html";
   }
   else{
-    alert("Incorrect username or Password");
+    // alert("Incorrect username or Password");
+    alert("Use Username: Hariprasad, Password: Hari or create an new account");
   }
 }
 
